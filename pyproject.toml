@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "differentiable-projectile-motion"
+version = "0.1.0"
+description = "A compact JAX project for differentiable projectile simulation and numerical-method experiments."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "jax>=0.4.30",
+  "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
